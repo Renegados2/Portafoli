@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <caption><h1>Buscador de telefons</h1></caption>
+        <label for="Marca">Marca   
+            <input list="marcas" type="text" name="Marca">
+        </label> <br/>
+
+        <label for="Preu">Max preu
+            <select name="Preu">
+                <option value="0-100">0-100</option>
+                <option value="100-150">100-150</option>
+                <option value="150-200">150-200</option>
+                <option value="200-300">200-300</option>
+            </select>
+        </label>
+    </form>
+
+    <datalist id="marcas">
+        <option value="Xiaomi"></option>
+        <option value="Samsung"></option>
+        <option value="IPhone"></option>
+        <option value="Nothing"></option>
+        <option value="Huawei"></option>
+    </datalist>
+</body>
+</html>
