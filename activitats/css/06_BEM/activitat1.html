@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="list__item"><a href="#" class="list__link link--roig">Inici</a></li>
+                <li class="list__item"><a href="#" class="list__link">Primer producte</a></li>
+                <li class="list__item"><a href="#" class="list__link">Segon producte</a></li>
+            </ul>
+        </nav>
+        <form class="form__search">
+            <input type="text" name="busqueda" class="search__input">
+            <button type="submit" class="search__button">Buscar</button>
+        </form>
+    </header>
+    <main>
+    </main>
+
+    <style>
+        
+        .logo {
+            width: 200px;
+            position: fixed;
+            margin-top: 10px;
+            right: 100px;
+        }
+
+        .header {
+            position: relative;
+            background-color: rgb(185, 185, 185);
+            height: 100px;
+        }
+
+        .nav__list {
+            list-style: none;
+            padding-top: 30px;
+            display: flex;
+        }
+
+        .list__item {
+            margin-top: 10px;
+        }
+
+        .list__link {
+            text-decoration: none;
+            color: black;
+            background-color: #ffffff;
+            border: 1px solid black;
+            padding: 4px;
+            margin-left: 10px;
+            border-radius: 5px;
+            &:hover {
+                background-color: #dddddd;
+            }
+        }
+
+        .link--roig {
+            color: red;
+        }
+
+        .form__search {
+            position: absolute;
+            right: 50%;
+            left: 40%;
+            top: 40px;
+            display: flex;
+        }
+
+        .search__button {
+            margin-left: 10px;
+        }
+
+
+        .productes {
+            background-color: #dddddd;
+        }
+        .producte {
+            margin-top: 40px;
+            background-color: #ffffff;
+        }
+
+        .producte__nom {
+            font-size: 2em;
+        }
+</style>
+</body>
+</html>

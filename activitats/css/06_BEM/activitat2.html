@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="commentArea">
+        <div class="commentsArea_comments">
+            <div class="comment">
+                <div class="comment__img__placeholder">
+                    <img src="img/avatar.png" alt="Avatar" class="comment__img"> 
+                </div>
+                <div class="comment__text">
+                    <div class="comment__title">
+                        Review molt important
+                    </div>
+                    <div class="comment__content">
+                        Gran pàgina
+                    </div>
+                </div>
+            </div>
+            <div class="commentsArea_comments">
+                <div class="comment">
+                    <div class="comment__img__placeholder">
+                        <img src="img/avatar.png" alt="Avatar" class="comment__img"> 
+                    </div>
+                    <div class="comment__text">
+                        <div class="comment__title">
+                            Lorem ipsum
+                        </div>
+                        <div class="comment__content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam optio alias cumque sed, iusto deleniti fugit pariatur rem maiores itaque molestiae saepe dolorum. Dolorem quae sunt et, nostrum quia ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae ipsum saepe quis corporis voluptas molestias quisquam reiciendis atque, exercitationem est harum facilis libero impedit dolorem ipsam enim laboriosam numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis laudantium iusto cumque doloremque non natus, recusandae aspernatur, quos fugiat necessitatibus harum nam, enim corrupti nihil. Laboriosam ducimus asperiores adipisci nobis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa explicabo voluptates, vitae tenetur distinctio voluptatem facere quos a! Reiciendis nihil porro non saepe corrupti tempora omnis eum recusandae facilis exercitationem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis architecto sed quibusdam veniam cum natus hic? At praesentium natus odit nihil autem accusantium, quibusdam voluptatibus, eos recusandae, dolorum dolorem mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore ipsa incidunt illum voluptatem. Repellendus quas voluptatum harum exercitationem quo vel, totam blanditiis. Atque quos consequatur exercitationem nobis saepe labore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque delectus quam ullam inventore debitis. Ipsam, numquam! Ratione autem non perferendis, eveniet, perspiciatis quibusdam similique saepe odit minima tempora eaque unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eos provident vitae magni delectus velit deserunt perspiciatis cupiditate temporibus, maxime voluptatem porro iusto culpa quod error quibusdam alias necessitatibus. Rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur voluptates dolorum ullam minima ipsa iusto officiis, officia adipisci, quos sapiente perferendis assumenda iste magnam veniam porro iure aut distinctio modi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque consectetur eos blanditiis, optio, esse eveniet aut aliquam modi id voluptatem possimus similique corporis commodi dolores laboriosam quia, asperiores vitae necessitatibus.
+                        </div>
+                    </div>
+            </div>
+            <div class="commentsArea_comments">
+                <div class="comment">
+                    <div class="comment__img__placeholder">
+                        <img src="img/avatar.png" alt="Avatar" class="comment__img"> 
+                    </div>
+                    <div class="comment__text">
+                        <div class="comment__title">
+                            10/10
+                        </div>
+                        <div class="comment__content">
+                            Exel·lent experiencia, 10 molt recomanat
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    :root {
+        --comment-avatar-hight: 100px;
+        --comment-avatar-width: 100px;
+        --comment-content-font-size: 15px;
+        --comment-title-font-size: 25px
+    }
+
+    #commentArea {
+        background-color: #e9e9e9;
+        padding: 20px;
+        bottom: 0;
+    }
+    .comment__img {
+        width: var(--comment-avatar-width);
+        height: var(--comment-avatar-hight);
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    .comment__img__placeholder {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        width: calc(var(--comment-avatar-width) + 20px);
+        height: calc(var(--comment-avatar-hight) + 20px);
+    }
+
+    .comment {
+        display: flex;
+        background-color: rgb(230, 243, 255);
+        margin-bottom: 10px;
+        align-items: center;
+    }
+
+    .comment__text {
+        margin-left: 10px;
+    }
+
+    .comment__content {
+        font-size: var(--comment-content-font-size);
+        margin-bottom: 10px;
+    }
+    .comment__title {
+        font-size: var(--comment-title-font-size);
+        position: relative;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+</style>
+</html>
