@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <p><span class="red">SIMPLEST</span><span class="red bold less-font-size">BLOG</span></p>
+        </div>
+        <div class="container">
+            <p class="container__header">Hi, I'm <span class="header__name">Joan Vila</span>, a Frontend Engineer.<br/>
+            Enthusiast performance, responsive design and usabiity, always looking for the best project and good cofee. -- <a href="#" class="red no-decoration">about me</a></p>
+            <div class="writings">
+                <p class="writings__header">Writing..</p>
+                <div class="writing">
+                    <p><span class="date italic">Dec 10, 2015 --</span><span class="red bold underline">Welcome to jekyll!</span> -- You'll find this post in your _posts directory. Go ahead and edit it and re-build the site to see you changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve,... <span class="red underline italic">Read more</span></p>
+                </div>
+                <div class="writing">
+                    <p><span class="date italic">Nov 26, 2015 --</span><span class="red bold underline">Lorem ipsum dolor sit</span> -- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda aliquid, doloremque ab perspiciatis veritatis fugiat inventore ipsum libero saepe aperiam dignissimos nostrum molestiae soluta! Libero ab consectetur dolor placeat! ... <span class="red underline italic">Read more</span></p>
+                </div>
+                <div class="writing">
+                    <p><span class="date italic">Nov 12, 2015 --</span><span class="red bold underline">Lorem ipsum dolor sit</span> -- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda aliquid, doloremque ab perspiciatis veritatis fugiat inventore ipsum libero saepe aperiam dignissimos nostrum molestiae soluta! Libero ab consectetur dolor placeat! ... <span class="red underline italic">Read more</span></p>
+                </div>
+                <div class="writing" id="last">
+                    <p><span class="date italic">Nov 12, 2015 --</span><span class="red bold underline">The quick, brown fox jumps over a lazy dog</span> -- The quick, brown fox jumps over a lazy dog. Djs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab ... <span class="red underline italic">Read more</span></p>
+                </div>
+            </div>
+        </div>
+        <p id="rights">©2016 All rights reserved. Made with <span class="red underline">Jekyll</span> and ❤</p>
+    </div>
+    
+</body>
+
+<style>
+    .no-decoration {
+        text-decoration: none;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .underline {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .header__name {
+        padding: 3px;
+        color: #fee9ea;
+        background: red;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .date {
+        color: #a8a8a8;
+    }
+
+    .header > p {
+        font-size: 30px;
+    }
+
+    .less-font-size {
+        font-size: 27px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        color: #8e8e8e;
+        font-size: 16px;
+        margin-left: 30%;
+        margin-right: 30%;
+        border: 1px solid #f7b143;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .content > * {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .container__header {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+
+    .writings {
+        background-color: #f7f7f7;
+    }
+
+    .writings > * {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    
+    .writings__header {
+        padding-top: 40px;
+        margin-bottom: 0;
+        font-size: 25px;
+    }
+
+    .header {
+        border-bottom: 1px solid #dbdbdb;
+        width: 100%;
+    }
+
+    .writing {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    #last {
+        border-bottom: 0;
+    }
+
+    #rights {
+        margin-left: 40px;
+    }
+</style>
+</html>
