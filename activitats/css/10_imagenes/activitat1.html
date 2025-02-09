@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="chat">
+        <h1 id="title">Chat</h1>
+        <article class="msg">
+            <img class="avatar" src="img/avatar.webp" alt="Usuari">
+            <section class="text">
+                <span class="name">Joan</span>
+                <span class="content">Hola, ¿com estas?</span>
+            </section>
+            <span class="date">09/02/2025 14:35</span>
+        </article>
+        <article class="msg2">
+            <img class="avatar" src="img/avatar.webp" alt="Usuari">
+            <section class="text">
+                <span class="name">Maria</span>
+                <span class="content">¡Hola! Tot be, ¿i tu?</span>
+            </section>
+            <span class="date">09/02/2025 14:36</span>
+        </article>
+    </section>
+</body>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .chat {
+        margin-top: 100px;
+        border: 3px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 40%;
+        background-color: rgb(185, 255, 232);
+        min-width: 500px;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 5em;
+        margin: 0;
+        margin-bottom: 20px;
+        border-bottom: 3px solid black;
+        background-color: aquamarine;
+        border-radius: 20px;
+    }
+
+    .msg {
+        display: flex;
+        margin-bottom: 20px;
+        background-color: aquamarine;
+        margin-right: 2%;
+        border-radius: 50px;
+    }
+
+    .msg2 {
+        display: flex;
+        margin-bottom: 20px;
+        flex-direction: row-reverse;
+        text-align: right;
+        background-color: aquamarine;
+        margin-left: 2%;
+        border-radius: 50px;
+        
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: flex-start;
+        width: 70px;
+        border-radius: 40px;
+        margin: 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .name {
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+
+    .content {
+        font-size: 20px;
+    }
+
+    .date {
+        display: flex;
+        align-items: flex-end;
+        font-size: 80%;
+    }
+
+    .msg .date {
+        margin-left: 90px;
+    }
+
+    .msg2 .date {
+        margin-right: 90px;
+    }
+</style>
+
+</html>

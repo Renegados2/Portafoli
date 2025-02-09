@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <nav class="navegation">
+                <ul class="list">
+                    <li><a href="#" class="link">Curriculum vitae</a></li>
+                    <li><a href="#" class="link">X</a></li>
+                    <li><a href="#" class="link">Instagram</a></li>
+                    <li><a href="#" class="link">Gmail</a></li>
+                    <li><a href="#" class="link">Projectes</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+</body>
+
+<style>
+    body {
+        background-image: url("img/background.jpg");
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+        margin-top: 50%;
+        padding: 30px;
+        width: 400px;
+        height: 300px;
+        background-color: #8000ff50;
+        border: 3px solid white;
+        border-radius: 20px;
+    }
+
+    .navegation {
+        height: 100%;
+    }
+
+    .list {
+        list-style: none;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        width: 400px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.459);
+        border: 1px solid white;
+        border-radius: 30px;
+    }
+
+    .link:hover {
+        background-color: rgba(0, 0, 0, 0.651);
+    }
+</style>
+
+</html>
