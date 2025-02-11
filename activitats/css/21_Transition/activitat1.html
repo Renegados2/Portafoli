@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="nom">Nombre:</label>
+        <input type="text" od name="nom" required>
+        <br><br>
+
+        <label for="telefon">Teléfono:</label>
+        <input type="number" name="telefon" required>
+        <br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+<style>
+    input {
+        width: 200px;
+        height: 20px;
+        transition-duration: 1s;
+        transition-property: width, height;
+    }
+
+    input:focus{
+        transition-duration: 1s;
+        width: 250px;
+        height: 30px;
+    }
+
+    button {
+        background-color: #efefef;
+        transition: background-color;
+        transition-duration: 0.5s;
+        padding: 10px 20px;
+    }
+
+    button:hover {
+        background-color: transparent;
+    }
+</style>
+</html>
