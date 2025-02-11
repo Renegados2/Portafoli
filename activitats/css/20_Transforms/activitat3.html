@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="circles">
+        <div class="red"></div>
+        <div class="blue"></div>
+    </div>
+</body>
+
+<style>
+    .circles {
+        display: flex;
+    }
+
+    .circles > div {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        border-radius: 100px;
+    }
+
+    .blue {
+        color: blue;
+        opacity: 0.5;
+
+        &:hover {
+            transform: translateX(-203px);
+        }
+    }
+
+    .red {
+        color: red;
+    }
+</style>
+
+</html>
