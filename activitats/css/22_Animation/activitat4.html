@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="clock">
+            <div id="seconds" class="hand"></div>
+            <div id="minutes" class="hand"></div>
+            <div id="hours" class="hand"></div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .clock {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: rgb(212, 250, 250);
+        border: 4px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hand {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        display: inline;
+        width: 5px;
+        height: 50%;
+        background-color: black;
+        transform: translateY(-88px);
+    }
+
+    #seconds {
+        animation: clock_hand_seconds 60s infinite forwards linear;
+        background-color: red;
+    }
+
+    #minutes {
+        animation: clock_hand_seconds 3600s infinite forwards linear;
+    }
+
+    #hours {
+        animation: clock_hand_seconds 43200s infinite forwards linear;
+        height: 30%;
+    }
+
+
+
+    @keyframes clock_hand_seconds {
+        100% {
+            rotate: 360deg;
+        }
+    }
+
+    @keyframes clock_hand_seconds {
+        100% {
+            rotate: 360deg;
+        }
+    }
+
+    @keyframes clock_hand_seconds {
+        100% {
+            rotate: 360deg;
+        }
+    }
+</style>
+
+</html>

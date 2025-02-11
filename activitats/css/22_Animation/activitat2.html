@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noria con HTML y CSS</title>
+</head>
+<body>
+    <div class="noria">
+    <div class="roda">
+        <div class="radi1"></div>
+        <div class="radi2"></div>
+        <div class="radi3"></div>
+        <div class="radi4"></div>
+    </div>
+    </div>
+</body>
+
+<style>
+
+    body, html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .noria {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .roda {
+        width: 200px;
+        height: 200px;
+        border-radius: 120px;
+        border: 4px solid black;
+        animation: girar 20s infinite;
+        
+    }
+
+    .roda > div {
+        width: 100%;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        
+    }
+
+
+    .radi1 {
+        margin-top: 48%;
+    }
+    
+    .radi2 {
+        position: relative;
+        rotate: 90deg;
+        margin-top: 0px;
+    }
+
+    .radi3 {
+        position: relative;
+        rotate: 45deg;
+        margin-top: -6px;
+    }
+
+    .radi4 {
+    position: relative;
+    rotate: 135deg;
+    margin-top: -3px;
+    }
+
+    @keyframes girar {
+        0% { 
+            transform: rotate(0deg); 
+        }
+        100% { 
+            transform: rotate(360deg); 
+        }
+    }
+</style>
+
+</html>

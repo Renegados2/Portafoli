@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="center">
+            <div class="sun"></div>
+        </div>
+        <div class="moon"></div>
+    </div>
+</body>
+
+<style>
+@keyframes animacion {
+        50% {
+            transform: translateX(-480%);
+/*             animation-delay: 1s; */
+        }
+        100% {
+            transform: translateX(-860%);
+        }
+    }
+
+    
+    .content {
+        display: flex;
+    }
+
+    .sun {
+        position: absolute;
+        right: 50%;
+        background-color: rgb(255, 196, 0);
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .moon {
+        position: absolute;
+        right: 0;
+        
+        animation: animacion forwards;
+        animation-duration: 10s;
+
+
+
+
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+    }
+</style>
+
+</html>
