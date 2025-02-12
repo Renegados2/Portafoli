@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="pendulo">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pendulo {
+        position: relative;
+        width: 10px;
+        height: 300px;
+        background-color: black;
+        transform-origin: top center;
+        animation: pendulo 4s forwards infinite;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 100%;
+        position: absolute;
+        bottom: -50px;
+        left: -23px;
+        background-color: rgb(255, 196, 0);
+    }
+
+    @keyframes pendulo {
+        0% {
+            rotate: 20deg;
+        }
+        50% {
+            rotate: -20deg;
+        }
+        100% {
+            rotate: 20deg;
+        }
+    }
+</style>
+
+</html>
