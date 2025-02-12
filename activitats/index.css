@@ -1,0 +1,38 @@
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.activitats {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(245, 250, 253);
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.activitats > div {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: aliceblue;
+    transition: background-color 0.5s;
+}
+
+.activitats > div:hover {
+    background-color: rgb(216, 237, 255);
+}
