@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Loading</h1>
+        <div class="bar">
+            <div class="percentage"></div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bar {
+        position: relative;
+        width: 700px;
+        height: 30px;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+
+    .percentage {
+        height: 100%;
+/*         width: 100%; */
+        background-color: aqua;
+        border-radius: 7px;
+        animation: loading_bar 10s forwards;
+    }
+
+    .number {
+        position: absolute;
+        right: 48%;
+        top: -16px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    @keyframes loading_bar {
+        0% {
+            width: 0%;
+        }
+
+
+        40% {
+            width: 40%;
+        }
+
+        60% {
+            width: 60%;
+        }
+
+        90% {
+            width: 90%;
+        }
+
+        95% {
+            width: 95%;
+        }
+
+        99% {
+            width: 99%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+</style>
+
+</html>
