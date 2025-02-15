@@ -5,19 +5,23 @@
     --color3: #140f07;
     --color4: #625b02;
     --color5: #eed16b;
+
+    --text-color-h2: #dffffd;
+    --text-color: #5e6b6a;
 }
 
 
 body {
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--color2);
 }
 
 header {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: var(--color2);
+    background-color: var(--color1);
     height: 80px;
     display: flex;
     align-items: center;
@@ -42,7 +46,7 @@ header {
 }
 
 .navegation a:hover {
-    background-color: var(--color1);
+    background-color: var(--color2);
     animation: navegation__hover 0.5s forwards;
 }
 
@@ -50,11 +54,23 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    min-width: 820px;
+    min-height: 500px;
+    border-bottom: 3px dotted black;
 }
 
 .head img {
-    min-width: 240px;
-    max-width: 400px;
+    min-width: 10%;
+    max-width: 22%;
+    transition: transform 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.head__text {
+    min-width: 200px;
+    max-width: 500px;
 }
 
 .head__text * {
@@ -64,11 +80,43 @@ header {
 
 .head__text h1 {
     font-size: 6em;
+    text-shadow: 3px 2px var(--text-color-h2);
 }
 
 .head__text h2 {
     font-size: 3em;
+    color: var(--text-color-h2);
+    text-shadow: 1px 1px black;
 }
+
+.head__text p {
+    color: var(--text-color);
+    font-size: 2em;
+}
+
+.programming__languages {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.programming__languages__carrousel {
+    display: flex;
+    gap: 250px;
+    animation: carrusel 10s infinite linear;
+}
+
+.programming__languages__carrousel img {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+@keyframes carrusel {
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 
 @keyframes navegation__hover {
     0% {
