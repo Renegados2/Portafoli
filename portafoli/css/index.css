@@ -104,7 +104,8 @@ nav {
 }
 
 .wave2 {
-    top: 65%;
+    top: 61%;
+    opacity: 0.85;
 }
 
 /* Carrousel */
@@ -126,7 +127,7 @@ nav {
 }
 
 .logo {
-    width: 180px;
+    width: 170px;
     height: auto;
     flex-shrink: 0;
     margin-left: 150px; 
@@ -137,6 +138,7 @@ nav {
 /* Content */
 
 .content {
+    padding-top: 20px;
     background-color: #80e6f9;
 }
 
