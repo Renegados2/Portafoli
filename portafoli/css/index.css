@@ -1,138 +1,156 @@
-
-:root {
-    --color1: #0ffff8;
-    --color2: #88fff9;
-    --color3: #140f07;
-    --color4: #625b02;
-    --color5: #eed16b;
-
-    --text-color-h2: #dffffd;
-    --text-color: #5e6b6a;
+@font-face {
+    font-family: 'Baloo'; 
+    src: url('../fonts/BalooBhaijaan-Regular.ttf'); 
 }
-
 
 body {
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: var(--color2);
+    background-color: #f4f4f4;
 }
+
+
+
+/* Header */ 
 
 header {
-    position: sticky;
-    top: 0;
+    display: flex;
+}
+
+header img {
+    width: 100px;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top: 0.2%;
+}
+
+nav {
     width: 100%;
-    background-color: var(--color1);
-    height: 80px;
+    background-color: #d3dbdd;
+    border-radius: 0 0 0 15px;
     display: flex;
     align-items: center;
 }
 
-
-.navegation ul {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 0;
+.link__container {
     list-style: none;
+    display: flex;
+    gap: 50%;
+    font-size: 1.5rem;
+    font-family: Baloo;
 }
 
-.navegation a {
+.link__container a {
     text-decoration: none;
-    color: black;
-    padding: 5px 10px;
-    border: 3px solid black;
-    border-image: linear-gradient(0deg, white, var(--color3)) 2;
-    transition: background-color  0.5s;
+    color: #f9fafb;
+    transition: color 0.5s;
 }
 
-.navegation a:hover {
-    background-color: var(--color2);
-    animation: navegation__hover 0.5s forwards;
+.link__container a:hover {
+    color: #535353;
 }
 
-.head {
+
+/* Body head */
+.body__head {
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    min-width: 820px;
-    min-height: 500px;
-    border-bottom: 3px dotted black;
-}
-
-.head img {
-    min-width: 10%;
-    max-width: 22%;
-    transition: transform 0.5s ease-in-out;
-    &:hover {
-        transform: scale(1.2);
-    }
+    height: 82vh;
 }
 
 .head__text {
-    min-width: 200px;
-    max-width: 500px;
-}
-
-.head__text * {
-    margin: 0;
-    padding: 0;
+    font-family: Baloo;
+    position: relative;
 }
 
 .head__text h1 {
-    font-size: 6em;
-    text-shadow: 3px 2px var(--text-color-h2);
+    height: 30px;
+    color: #ffffff;
+    font-size: 7rem;
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
 }
 
 .head__text h2 {
-    font-size: 3em;
-    color: var(--text-color-h2);
-    text-shadow: 1px 1px black;
-}
+    color: #77c4d7;
+    font-size: 4rem;
+} 
 
-.head__text p {
-    color: var(--text-color);
-    font-size: 2em;
-}
-
-.programming__languages {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 30px;
-}
-
-.programming__languages__carrousel {
-    display: flex;
-    gap: 250px;
-    animation: carrusel 10s infinite linear;
-}
-
-.programming__languages__carrousel img {
+.body__head img {
+    max-width: 600px;
     min-width: 200px;
-    max-width: 200px;
+    margin-top: 50px;
+    color: #9ab9c1;
+
 }
 
-@keyframes carrusel {
-    100% {
+.pre__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Waves */
+
+.wave {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+}
+
+.wave2 {
+    top: 65%;
+}
+
+/* Carrousel */
+
+.languages {
+    margin-top: 4%;
+    height: 220px;
+    background-color: #a7f1ff;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    animation: languages_carrousel 15s linear infinite;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 150px; 
+}
+
+
+
+/* Content */
+
+.content {
+    background-color: #80e6f9;
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes languages_carrousel {
+    from {
+        transform: translateX(0);
+    }
+    to {
         transform: translateX(-100%);
     }
 }
-
-
-@keyframes navegation__hover {
-    0% {
-        border-image: linear-gradient(0deg, white, var(--color3)) 2;
-    }
-    25% {
-        border-image: linear-gradient(90deg, white, var(--color3)) 2;
-    }
-    50% {
-        border-image: linear-gradient(180deg, white, var(--color3)) 2;
-    }
-    75% {
-        border-image: linear-gradient(270deg, white, var(--color3)) 2;
-    }
-    100% {
-        border-image: linear-gradient(360deg, white, var(--color3)) 2;
-    }
-}
-
