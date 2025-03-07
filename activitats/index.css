@@ -1,38 +1,73 @@
-.content {
-    display: flex;
-    justify-content: space-evenly;
+@import url("../portafoli/css/navbar.css");
+
+
+body {
+    background-color: #f4f4f4;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.content > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.content ul {
+
+.activitats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+}
+
+.activitats > div {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.activitats h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.activitats ul {
     list-style: none;
     padding: 0;
 }
 
-.activitats {
-    display: grid;
-    grid-template-columns: 180px 180px 180px;
-    grid-template-rows: 200px 200px;
-    gap: 10px;
-    padding: 10px;
-    background-color: rgb(245, 250, 253);
-    border: 1px solid black;
-    border-radius: 20px;
+.activitats li {
+    margin-bottom: 10px;
 }
 
-.activitats > div {
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
-    background-color: aliceblue;
-    transition: background-color 0.5s;
+.activitats a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.activitats a:visited {
+    color: #004085;
 }
 
-.activitats > div:hover {
-    background-color: rgb(216, 237, 255);
+.activitats a:hover {
+    color: #007bff;
+}
+
+
+.css > div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 5px solid #1572B6;
+}
+
+.html > div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 5px solid #E44D26;
+    margin-bottom: 20px;
 }
