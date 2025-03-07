@@ -1,3 +1,6 @@
+@import url("./navbar.css");
+
+
 @font-face {
     font-family: 'Baloo'; 
     src: url('../fonts/BalooBhaijaan-Regular.ttf'); 
@@ -6,47 +9,6 @@
 body {
     margin: 0;
     background-color: #f4f4f4;
-}
-
-
-
-/* Header */ 
-
-header {
-    display: flex;
-}
-
-header img {
-    width: 100px;
-    margin-left: 2%;
-    margin-right: 3%;
-    margin-top: 0.2%;
-}
-
-nav {
-    width: 100%;
-    background-color: #d3dbdd;
-    border-radius: 0 0 0 15px;
-    display: flex;
-    align-items: center;
-}
-
-.link__container {
-    list-style: none;
-    display: flex;
-    gap: 50%;
-    font-size: 1.5rem;
-    font-family: Baloo;
-}
-
-.link__container a {
-    text-decoration: none;
-    color: #f9fafb;
-    transition: color 0.5s;
-}
-
-.link__container a:hover {
-    color: #535353;
 }
 
 
