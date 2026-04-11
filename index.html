@@ -1,60 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portafoli/css/index.css">
-    <title>Index</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Joan Vila | Under Construction</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-surface": "#fcf8f8",
+                        "primary-fixed-dim": "#00d4ec",
+                        "on-tertiary-fixed-variant": "#646b00",
+                        "secondary-dim": "#d6d4d3",
+                        "on-primary": "#005762",
+                        "tertiary-container": "#e7f600",
+                        "surface-container": "#1a1919",
+                        "secondary": "#e5e2e1",
+                        "primary-dim": "#00d4ec",
+                        "surface-container-highest": "#262626",
+                        "on-surface": "#ffffff",
+                        "surface": "#0e0e0e",
+                        "on-secondary": "#525151",
+                        "on-tertiary-container": "#555b00",
+                        "on-secondary-fixed-variant": "#5c5b5b",
+                        "surface-container-low": "#131313",
+                        "secondary-fixed-dim": "#d6d4d3",
+                        "surface-variant": "#262626",
+                        "secondary-container": "#474746",
+                        "surface-dim": "#0e0e0e",
+                        "on-primary-fixed-variant": "#005762",
+                        "primary-container": "#00e3fd",
+                        "tertiary-fixed-dim": "#e2f000",
+                        "surface-container-high": "#201f1f",
+                        "on-error-container": "#ffb2b9",
+                        "tertiary-dim": "#e2f000",
+                        "primary-fixed": "#00e3fd",
+                        "error-container": "#a70138",
+                        "outline": "#777575",
+                        "on-primary-container": "#004d57",
+                        "error": "#ff6e84",
+                        "surface-bright": "#2c2c2c",
+                        "error-dim": "#d73357",
+                        "background": "#0e0e0e",
+                        "on-secondary-container": "#d2d0cf",
+                        "on-error": "#490013",
+                        "tertiary": "#faffaf",
+                        "surface-tint": "#81ecff",
+                        "outline-variant": "#494847",
+                        "tertiary-fixed": "#f0ff00",
+                        "secondary-fixed": "#e5e2e1",
+                        "inverse-on-surface": "#565554",
+                        "on-tertiary-fixed": "#484d00",
+                        "on-primary-fixed": "#003840",
+                        "primary": "#81ecff",
+                        "surface-container-lowest": "#000000",
+                        "on-tertiary": "#5d6400",
+                        "on-surface-variant": "#adaaaa",
+                        "on-background": "#ffffff",
+                        "inverse-primary": "#006976",
+                        "on-secondary-fixed": "#403f3f"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-glow {
+            text-shadow: 0 0 30px rgba(129, 236, 255, 0.4);
+        }
+        .kinetic-mesh {
+            background: radial-gradient(circle at 20% 30%, rgba(0, 212, 236, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 70%, rgba(250, 255, 175, 0.03) 0%, transparent 50%);
+            background-color: #0e0e0e;
+        }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <img class="header__img" src="./portafoli/imatges/svg/code_img.svg" alt="Code logo">
-        <nav class="header__nav">
-            <ul class="link__container">
-                <li><a href="#">Index</a></li>
-                <li><a href="activitats/">Activitats</a></li>
-            </ul>
-        </nav>
-    </header>
-    <body>
-        <div class="body__head">
-            <div class="head__text">
-                <h1>Joan Vila</h1>
-                <h2>Student</h2>
-            </div>
-            <img src="./portafoli/imatges/svg/programer.svg" alt="programmer">
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary min-h-screen flex flex-col overflow-x-hidden kinetic-mesh">
+
+<main class="flex-grow flex flex-col items-center justify-center relative px-6 py-12 md:py-24">
+    <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] md:w-[120%] md:h-[120%] opacity-20 transition-all duration-700">
+            <img alt="Geometric Architectural Sketch" class="w-full h-full object-cover grayscale invert mix-blend-screen" src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&q=80&w=2000"/>
+        </div>
+    </div>
+
+    <div class="relative z-10 w-full max-w-5xl flex flex-col items-center text-center">
+        <div class="w-[2px] h-16 md:h-24 bg-gradient-to-b from-primary to-transparent mb-8 md:mb-12"></div>
+
+        <div class="flex flex-col items-center mb-6 md:mb-8">
+            <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter text-on-surface leading-[0.9] md:leading-[0.85] uppercase text-glow">
+                UNDER <br class="md:hidden"/> CONSTRUCTION
+            </h1>
         </div>
 
-        <div class="pre__content">
-            <img class="wave wave1" src="./portafoli/imatges/svg/Ola.svg" alt="Ola">
-
-            <div class="languages">
-                <div class="logos">
-                    <img src="./portafoli/imatges/svg/logos/CSS3_logo.svg" alt="CSS" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/HTML5_logo.svg" alt="HTML" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/Unofficial_JavaScript.svg" alt="JavaScript" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/Python-logo.svg" alt="Python" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/java-icon.svg" alt="Java" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/Godot_icon.svg" alt="Godot" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/php-logo.svg" alt="PHP" class="logo">
-                </div>
-                <div class="logos">
-                    <img src="./portafoli/imatges/svg/logos/CSS3_logo.svg" alt="CSS" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/HTML5_logo.svg" alt="HTML" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/Unofficial_JavaScript.svg" alt="JavaScript" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/Python-logo.svg" alt="Python" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/java-icon.svg" alt="Java" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/Godot_icon.svg" alt="Godot" class="logo">
-                    <img src="./portafoli/imatges/svg/logos/php-logo.svg" alt="PHP" class="logo">
-                </div>
-            </div>
-
-            <img class="wave wave2" src="./portafoli/imatges/svg/olav2.svg" alt="Ola v2">
-
-            <div class="content">
-                <h1>To be continued...</h1>
-            </div>
+        <div class="max-w-2xl mb-12 md:mb-16 px-4">
+            <p class="text-base md:text-xl text-on-surface-variant font-light leading-relaxed md:leading-relaxed">
+                Unfolding the next iteration of architectural dialogue. Redefining space through light, kinetics, and structural honesty. The new digital atelier is currently being refined.
+            </p>
         </div>
-    </body>
+
+        <div class="group relative">
+            <div class="absolute -inset-1 bg-primary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <a class="relative flex items-center gap-3 md:gap-4 bg-surface-container-high border border-outline-variant/20 px-6 py-4 md:px-8 md:py-5 rounded-full text-primary hover:text-white transition-all duration-300 hover:bg-primary hover:scale-[1.02] active:scale-95 group" href="https://www.linkedin.com/in/joan-vila-743008377/?locale=en" target="_blank" rel="noopener noreferrer">
+                <span class="text-xs md:text-base font-bold tracking-widest uppercase">Visit my LinkedIn</span>
+                <span class="material-symbols-outlined text-sm md:text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer class="w-full py-10 px-6 border-t border-zinc-800/30 bg-zinc-950/50 backdrop-blur-sm">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 w-full max-w-screen-2xl mx-auto">
+        <div class="font-manrope text-[10px] tracking-widest uppercase text-zinc-500 text-center md:text-left">
+            © 2026 JOAN VILA ARCHITECTURE
+        </div>
+        
+        <div class="flex gap-8 md:gap-12 justify-center">
+            <a class="font-manrope text-[10px] tracking-widest uppercase text-zinc-500 hover:text-tertiary transition-all duration-500 hover:translate-x-1" href="https://www.linkedin.com/in/joan-vila-743008377/?locale=en">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
