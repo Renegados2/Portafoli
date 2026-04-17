@@ -76,6 +76,8 @@ h2 {
     border-radius: 12px;
     border: 1px solid var(--border);
     transition: 0.2s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -97,14 +99,25 @@ h2 {
     border-radius: 4px;
 }
 
-.project-card a {
+/* Contenedor de links de proyectos */
+.project-links {
+    margin-top: auto;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.project-links a {
     color: var(--accent);
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-/* Skills con Iconos */
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+/* Skills */
 .skills-wrapper {
     display: flex;
     flex-direction: column;
