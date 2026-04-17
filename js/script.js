@@ -34,37 +34,38 @@ const PROYECTOS = [
         titulo: "Pokedex",
         desc: "Pokedex usando la PokeAPI",
         tags: ["Angular", "Tailwind"],
-        url: "https://github.com/Renegados2/Pokedex"
+        codeUrl: "https://github.com/Renegados2/Pokedex",
+        webUrl: "https://pokedex.joanvila.dev"
     },
     {
         titulo: "SpotyDAW",
         desc: "Spotify usando localstorage",
         tags: ["Angular", "Tailwind"],
-        url: "https://github.com/Renegados2/SpotyDAW"
+        codeUrl: "https://github.com/Renegados2/SpotyDAW"
     },
     {
         titulo: "Chose your Life",
         desc: "Proyecto creado para la HackEPS 2025",
         tags: ["Angular", "Tailwind", "Express"],
-        url: "https://github.com/Renegados2/Chose-your-life-CyL"
+        codeUrl: "https://github.com/Renegados2/Chose-your-life-CyL"
     },
     {
         titulo: "Wumpus Project",
         desc: "Juego wunpus creado en ciclo de DAW",
         tags: ["Java"],
-        url: "https://github.com/Renegados2/A3P3WumpusProject"
+        codeUrl: "https://github.com/Renegados2/A3P3WumpusProject"
     },
     {
         titulo: "Castle Defense Project",
         desc: "Juego Defensa de castillo creado en ciclo de DAW",
         tags: ["Java"],
-        url: "https://github.com/Renegados2/A2P2CastleDefenseProject"
+        codeUrl: "https://github.com/Renegados2/A2P2CastleDefenseProject"
     },
     {
         titulo: "Hangmans Game Project",
         desc: "Juego del colgado creado en ciclo de DAW",
         tags: ["Java"],
-        url: "https://github.com/Renegados2/A1P1HangmansGameProject"
+        codeUrl: "https://github.com/Renegados2/A1P1HangmansGameProject"
     }
 ];
 
@@ -82,7 +83,7 @@ function renderPortfolio() {
         });
     }
 
-    // 2. Skills (Front y Back)
+    // 2. Skills
     const frontContainer = document.getElementById('skills-front');
     const backContainer = document.getElementById('skills-back');
 
@@ -103,7 +104,7 @@ function renderPortfolio() {
         });
     }
 
-    // 3. Proyectos
+    // 3. Proyectos con lógica condicional para webUrl
     const projContainer = document.getElementById('projects-grid');
     if (projContainer) {
         PROYECTOS.forEach(p => {
@@ -112,11 +113,13 @@ function renderPortfolio() {
                     <h3>${p.titulo}</h3>
                     <p>${p.desc}</p>
                     <div class="tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>
-                    <a href="${p.url}" target="_blank">Ver código →</a>
+                    <div class="project-links">
+                        <a href="${p.codeUrl}" target="_blank">Ver código →</a>
+                        ${p.webUrl ? `<a href="${p.webUrl}" target="_blank">Ver web →</a>` : ''}
+                    </div>
                 </div>`;
         });
     }
 }
 
-// Arrancar el script
 document.addEventListener('DOMContentLoaded', renderPortfolio);
