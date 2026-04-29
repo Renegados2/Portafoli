@@ -12,20 +12,24 @@ const IDIOMAS = [
 const SKILLS = {
     frontend: [
         { nombre: "JavaScript", img: "javascript.svg" },
+        { nombre: "typescript", img: "typescript.svg" },
         { nombre: "Vue.js", img: "vue.svg" },
         { nombre: "Angular", img: "angular.svg" },
-        { nombre: "Tailwind", img: "tailwind.svg" },
         { nombre: "Flutter", img: "flutter.svg" },
+        { nombre: "Tailwind", img: "tailwind.svg" },
+        { nombre: "Bootstrap", img: "bootstrap.svg" },
         { nombre: "HTML", img: "html.svg" },
-        { nombre: "CSS", img: "css.svg" }
+        { nombre: "CSS", img: "css.svg" },
     ],
     backend: [
-        { nombre: "Go", img: "go.svg" },
         { nombre: "PHP", img: "php.svg" },
-        { nombre: "MySQL", img: "mysql.svg" },
         { nombre: "Java", img: "java.svg" },
+        { nombre: "Go", img: "go.svg" },
+        { nombre: "MySQL", img: "mysql.svg" },
+        { nombre: "Codeigniter", img: "codeigniter.svg" },
+        { nombre: "Laravel", img: "laravel.svg" },
         { nombre: "Sage X3", img: "sage.svg" },
-        { nombre: "Git", img: "git.svg" }
+        { nombre: "Git", img: "git.svg" },
     ]
 };
 
